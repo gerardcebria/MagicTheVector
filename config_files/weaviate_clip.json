@@ -1,0 +1,61 @@
+{
+  "class": "MTGCard",
+  "description": "A sample to search for mtg cards",
+  "moduleConfig": {
+    "multi2vec-clip": {
+      "textFields": [
+        "oracle_text",
+        "card_name",
+        "type_line",
+        "colors"
+      ]
+    }
+  },
+  "vectorIndexType": "hnsw",
+  "vectorizer": "multi2vec-clip",
+  "properties": [
+    {
+      "dataType": [
+        "string"
+      ],
+      "name": "filename"
+    },
+    {
+      "dataType": [
+        "string"
+      ],
+      "name": "type_line"
+    },
+    {
+      "dataType": [
+        "string"
+      ],
+      "name": "colors"
+    },
+    {
+      "dataType": [
+        "string"
+      ],
+      "name": "oracle_text"
+    },
+    {
+      "dataType": [
+        "string"
+      ],
+      "name": "set_id"
+    },
+    {
+      "dataType": [
+        "string"
+      ],
+      "name": "card_name"
+    },
+    {
+      "dataType": [
+        "string"
+      ],
+      "name": "image_url"
+    }
+  ]
+}
+
